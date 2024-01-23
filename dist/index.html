@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - D3 canvas globe with country hover</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>    
+  </head>
+  <body>
+
+    <header>
+      <h2 id="InfoGlobe">InfoGlobe</h2>
+    </header>
+    
+    <div id="infoTabs">
+      <h2 class="hidden" id="current"></h2>
+      
+      <!-- <label for="year">Year:</label>
+      <select name="year" id="year">
+        <option value="2000">2000</option>
+        <option value="2010">2010</option>
+        <option value="2015">2015</option>
+        <option value="2020">2020</option>
+      </select> -->
+      
+      <span id="infopanel">
+        <br>
+        <h1 id="countryName"></h1>
+        <h3 id="staticTitlePop">Variazione della popolazione:</h3>
+        <h1 id="popInfo"></h1>
+      </span>
+      <div id="d3-container"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+    <div>
+      <canvas id="globe"></canvas>
+      
+    </div>
+    <footer>
+      
+      <p>Authors:   Michelangelo Todesco  <a href="https://github.com/Crackerigno" class="fa fa-github"></a>  &  Michelangelo Fantin  <a href="https://github.com/michelangelo404" class="fa fa-github"></a> </p>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+    <script src='https://d3js.org/d3-geo.v1.min.js'></script>
+    <!-- <script src='https://d3js.org/d3.v1.min.js'></script> -->
+    <script src='https://d3js.org/topojson.v2.min.js'></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/versor@0.2"></script>
+  </body>
+</html>
